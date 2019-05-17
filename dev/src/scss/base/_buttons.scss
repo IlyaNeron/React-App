@@ -1,0 +1,20 @@
+.btn {
+  background: $btn-background-color;
+  color: $btn-color;
+  outline: none;
+  border: $btn-border;
+  padding: $btn-padding;
+  min-width: $btn-min-width;
+  cursor: pointer;
+  transition: .3s background linear, .3s color linear, .3s border linear;
+  text-transform: uppercase;
+
+  &-md {
+    min-width: 139px;
+  }
+
+  &:hover {
+    background: $skyblue;
+    color: $white;
+  }
+}

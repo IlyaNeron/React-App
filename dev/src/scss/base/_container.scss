@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+  max-width: 970px;
+  padding: 0 15px;
+
+  &-lg {
+    max-width: 1600px;
+  }
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@include media('<phone') {
+  .container-flex {
+    flex-direction: column;
+  }
+}
