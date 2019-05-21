@@ -1,5 +1,7 @@
 import React from "react";
-import Header from '../components/header/header'
+import Header from '../components/header/header';
+import SectionNews from "../components/sections/section-news";
+import SectionGallery from "../components/sections/section-gallery";
 
 
 class Init extends React.Component{
@@ -8,7 +10,8 @@ class Init extends React.Component{
             <div className={'wrapper'}>
                 <Header/>
                 <main className={'main'}>
-
+                    <SectionNews />
+                    <SectionGallery />
                 </main>
                 <footer className={'footer'}>
 

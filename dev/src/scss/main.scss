@@ -2,6 +2,9 @@
 @import "vendor/include-media";
 @import "vendor/icoomoon";
 
+@import "sections/section-news";
+@import "sections/section-gallery";
+
 @import "base/variables";
 @import "base/reset";
 @import "base/mixins";
@@ -11,6 +14,7 @@
 @import "base/form";
 @import "base/blockquote";
 @import "base/swiper";
+@import "base/row";
 
 @import "layout/wrapper";
 @import "layout/main";
