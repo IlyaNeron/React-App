@@ -6,6 +6,7 @@ class GalleryBlock extends React.Component{
 
     constructor(props) {
         super(props);
+        this.galleryBlock = React.createRef();
         this.state = {
             error: null,
             isLoaded: false,
@@ -59,10 +60,14 @@ class GalleryBlock extends React.Component{
 
             return (
                 galleryShow.map(galleryItem => (
-                    <div className={'gallery-block'}>
-                        <img src={galleryItem.url} alt="Image Description" width={''} height={''}/>
-                        <img src={galleryItem.thumbnailUrl} alt="Image Description" width={''} height={''}/>
-                        <img src={galleryItem.thumbnailUrl} alt="Image Description" width={''} height={''}/>
+                    <div ref={this.galleryBlock} className={'gallery-block'}>
+                        <div className="image-block-lg">
+                            <img src={galleryItem.url} alt="Image Description" width={''} height={''}/>
+                        </div>
+                        <div className="image-block-sm">
+                            <img src={galleryItem.thumbnailUrl} alt="Image Description" width={''} height={''}/>
+                            <img src={galleryItem.thumbnailUrl} alt="Image Description" width={''} height={''}/>
+                        </div>
                     </div>
                 ))
             );

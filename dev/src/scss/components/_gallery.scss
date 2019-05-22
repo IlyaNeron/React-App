@@ -1,0 +1,47 @@
+.gallery {
+  overflow: hidden;
+
+  &-inner {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.gallery-block {
+  display: flex;
+  margin: 0 2px;
+
+  &:nth-child(odd) {
+    flex-direction: column;
+
+    .image-block-lg {
+      margin: 0 0 4px;
+    }
+  }
+
+  &:nth-child(even) {
+    flex-direction: column-reverse;
+
+    .image-block-lg {
+      margin: 4px 0 0;
+    }
+  }
+
+  .image-block-lg {
+    width: 360px;
+    height: 360px;
+  }
+
+  .image-block-sm {
+    display: flex;
+
+    img:first-child {
+      margin-right: 4px;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}

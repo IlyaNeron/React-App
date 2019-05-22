@@ -8,13 +8,29 @@
   cursor: pointer;
   transition: .3s background linear, .3s color linear, .3s border linear;
   text-transform: uppercase;
-
-  &-md {
-    min-width: 139px;
-  }
+  font-size: $btn-font-size;
+  border-radius: $btn-border-radius;
 
   &:hover {
-    background: $skyblue;
+    background: $orange;
     color: $white;
+  }
+
+  &-form {
+    min-width: $btn-form-min-width;
+    background: $btn-form-background;
+    border-radius: $btn-form-border-radius;
+    border: $btn-form-border;
+    color: $btn-form-color;
+    padding: $btn-form-padding;
+
+    &:hover {
+      background: $orange;
+      border-color: $orange;
+    }
+  }
+
+  &-blue {
+    background: $blue;
   }
 }

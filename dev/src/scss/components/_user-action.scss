@@ -1,0 +1,9 @@
+.user-action {
+  margin-left: 15px;
+
+  .btn {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

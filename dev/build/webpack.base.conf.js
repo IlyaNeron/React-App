@@ -57,6 +57,13 @@ module.exports = {
           options: { sourceMap: true }
         },
       ]
+    },
+    {
+      test: /\.woff(2)?(\?[a-z0-9]+)?$/,
+      loader: "url-loader?limit=10000&mimetype=application/font-woff"
+    }, {
+      test: /\.(ttf|eot|svg)(\?[a-z0-9]+)?$/,
+      loader: "file-loader"
     }]
   },
   plugins: [
@@ -71,6 +78,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/img`, to: `./${PATHS.assets}img`},
+      { from: `${PATHS.src}/static`, to: '' },
     ]),
     new webpack.HotModuleReplacementPlugin()
   ],

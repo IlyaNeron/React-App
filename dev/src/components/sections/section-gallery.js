@@ -5,9 +5,13 @@ class SectionGallery extends React.Component{
     render() {
         return (
             <section className={'section-gallery'}>
-                <h2>inside company</h2>
-                <div className="gallery-wrapper">
-                    <GalleryBlock />
+                <div className="caption-block">
+                    <h2>inside company</h2>
+                </div>
+                <div className="gallery">
+                    <div className="gallery-inner">
+                        <GalleryBlock />
+                    </div>
                 </div>
             </section>
         );

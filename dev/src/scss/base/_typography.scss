@@ -2,7 +2,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h {
   font-family: $headings-font-family;
   line-height: $headings-line-height;
   margin: 0 0 30px;
-  color: $medium-gray;
+  color: $dark-black;
 
   &:last-child {
     margin: 0;
@@ -11,21 +11,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h {
 
 h1, .h1 {
   font-size: $h1-font-size;
+  color: $white;
   font-weight: 700;
-  margin: 0 0 30px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
 }
 
 h2, .h2 {
   font-size: $h2-font-size;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 h3, .h3 {
   font-size: $h3-font-size;
-  font-weight: 600;
+  font-weight: 500;
   font-family: $base-font-family;
-  text-transform: uppercase;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 
 h4, .h4 {

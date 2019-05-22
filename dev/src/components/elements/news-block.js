@@ -40,6 +40,9 @@ class NewsBlock extends React.Component {
     postsOut(postsArg) {
         let showLength = this.state.showArr.length;
         for (let i = showLength; i < showLength + defaultBlocksCount; i++) {
+            if (!postsArg[i]) {
+                break;
+            }
             this.state.showArr.push(postsArg[i]);
         }
     }

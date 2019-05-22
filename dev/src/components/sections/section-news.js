@@ -13,11 +13,15 @@ class SectionNews extends React.Component {
         return (
             <section className="section-news">
                 <div className="container">
-                    <h2>latest news</h2>
+                    <div className="caption-block">
+                        <h2>latest news</h2>
+                    </div>
                     <div className="row">
                         <NewsBlock />
                     </div>
-                    <button type={'button'} onClick={this.addingBlocks}>show more</button>
+                </div>
+                <div className="btn-wrapper">
+                    <button type={'button'} className={'btn'} onClick={this.addingBlocks}>more news</button>
                 </div>
             </section>
         );
