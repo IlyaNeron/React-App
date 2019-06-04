@@ -1,0 +1,38 @@
+.sign-up {
+  max-width: 600px;
+  margin: 0 auto;
+  color: $white;
+
+  h2 {
+    color: $white;
+    margin: 0 0 10px;
+  }
+
+  form {
+    position: relative;
+    max-width: 455px;
+    margin: 0 auto;
+    display: flex;
+
+    input {
+      margin-right: 15px;
+    }
+
+    .btn {
+      color: $white;
+      background: $skyblue;
+      border-color: $skyblue;
+      font-size: 16px;
+      min-width: 130px;
+      padding: 5px 10px;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  .caption-block {
+    margin: 0 0 40px;
+  }
+}

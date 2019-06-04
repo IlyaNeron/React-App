@@ -5,7 +5,7 @@ class Logo extends React.Component {
         return (
             <div className={'logo'}>
                 <a href="#">
-                    <img src="./assets/img/logo.png" alt="Image Description" width={''} height={''}/>
+                    <img src="./assets/img/logo.png" alt="Image Description" width={'66'} height={'48'}/>
                 </a>
             </div>
         );

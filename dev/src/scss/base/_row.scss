@@ -8,3 +8,15 @@
   width: (100%/3);
   padding: 0 15px;
 }
+
+@include media('<desktop') {
+  .col {
+    width: (100%/2);
+  }
+}
+
+@include media('<tablet') {
+  .col {
+    width: 100%;
+  }
+}

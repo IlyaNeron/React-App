@@ -3,6 +3,8 @@ import Header from '../components/header/header';
 import SectionNews from "../components/sections/section-news";
 import SectionGallery from "../components/sections/section-gallery";
 import SectionInfo from "../components/sections/section-info";
+import SectionVacancies from "../components/sections/section-vacancies";
+import Footer from "../components/footer/footer";
 
 class Init extends React.Component{
     render() {
@@ -13,10 +15,9 @@ class Init extends React.Component{
                     <SectionInfo />
                     <SectionNews />
                     <SectionGallery />
+                    <SectionVacancies />
                 </main>
-                <footer className={'footer'}>
-
-                </footer>
+                <Footer />
             </div>
         );
     }

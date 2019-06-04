@@ -23,9 +23,9 @@ $media-expressions: (
 $black: #333;
 $dark-black: #000;
 $white: #fff !default;
-$skyblue: #00e0d0;
+$skyblue: #00a0de;
 $dark: #2f2d35;
-$light-gray: #e3e3e3;
+$light-gray: #7d7d7d;
 $light-gray-2: #a09ea5;
 $medium-gray: #413d4b;
 $dark-gray: #272b2d;
@@ -50,17 +50,17 @@ $base-max-width: 1330px !default;
 $base-padding: 0 15px !default;
 
 // form
-$base-input-bg-color: transparent;
+$base-input-bg-color: $white;
 $base-form-color: $medium-gray;
 $base-form-border-radius: none;
 $form-element-padding: 10px 20px !default;
 $form-element-border-color: $light-gray-2 !default;
-$form-element-focus-border-color: $skyblue !default;
-$form-element-font-size: 14px !default;
+$form-element-focus-border-color: $orange !default;
+$form-element-font-size: 16px !default;
 $form-element-line-height: 1 !default;
 $form-element-font-weight: 300 !default;
 $placeholder-color: $light-gray-2 !default;
-$placeholder-hover-color: $medium-gray;
+$placeholder-hover-color: $orange;
 
 // Links
 $base-link-color: $white !default;

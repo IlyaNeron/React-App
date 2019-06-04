@@ -1,3 +1,23 @@
 .logo {
   margin-right: 47px;
+
+  a {
+    display: block;
+  }
+
+  img {
+    max-width: 66px;
+  }
+}
+
+@include media('<desktop') {
+  .logo {
+    margin-right: 30px;
+  }
+}
+
+@include media('<tablet') {
+  .logo {
+    margin-right: 20px;
+  }
 }

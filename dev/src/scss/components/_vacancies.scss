@@ -1,0 +1,55 @@
+.vacancies {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -10px 100px;
+  list-style: none;
+
+  li {
+    width: 50%;
+    padding: 0 12px;
+  }
+}
+
+.vacancy {
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  margin: 0 0 24px;
+  border: 2px solid transparent;
+  @include animate(border background);
+  color: $light-gray;
+
+  &:hover {
+    background: $white;
+    border-color: #ccc;
+    color: $light-gray;
+  }
+
+  .icon-block {
+    width: 110px;
+    font-size: 50px;
+    color: $blue;
+    text-align: center;
+    margin-right: 15px;
+  }
+
+  .description-block {
+    flex: 1 1 auto;
+    padding: 30px 15px 30px 0;
+    line-height: 1;
+  }
+
+  span {
+    font-size: 14px;
+    margin: 0 0 5px;
+    display: block;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}

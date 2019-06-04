@@ -12,7 +12,7 @@ input[type="search"],
 input[type="password"],
 input[type="file"],
 textarea {
-  @include size(100%, 45px);
+  @include size(100%, 40px);
   box-sizing: border-box;
   font-size: $form-element-font-size;
   font-weight: $form-element-font-weight;

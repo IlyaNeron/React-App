@@ -7,7 +7,7 @@ class MenuBlock extends React.Component{
                 <li>
                     <a href="#">
                         <div className="icon-block">
-                            <i className={'icon-clock'}></i>
+                            <img src="./assets/img/clock.svg" alt="Image Description" width={'88'} height={'88'}/>
                         </div>
                         <span>The Skinny On Lcd Monitors</span>
                     </a>
@@ -15,7 +15,7 @@ class MenuBlock extends React.Component{
                 <li>
                     <a href="#">
                         <div className="icon-block">
-                            <i className={'icon-star'}></i>
+                            <img src="./assets/img/star.svg" alt="Image Description" width={'88'} height={'88'}/>
                         </div>
                         <span>Guidelines For Inkjet Cartridge Refill</span>
                     </a>
@@ -23,7 +23,7 @@ class MenuBlock extends React.Component{
                 <li>
                     <a href="#">
                         <div className="icon-block">
-                            <i className={'icon-music'}></i>
+                            <img src="./assets/img/music-player.svg" alt="Image Description" width={'88'} height={'88'}/>
                         </div>
                         <span>Do A Sporting Stag Do In Birmingham</span>
                     </a>
@@ -31,7 +31,7 @@ class MenuBlock extends React.Component{
                 <li>
                     <a href="#">
                         <div className="icon-block">
-                            <i className={'icon-house'}></i>
+                            <img src="./assets/img/house.svg" alt="Image Description" width={'88'} height={'88'}/>
                         </div>
                         <span>Your Computer Usage</span>
                     </a>

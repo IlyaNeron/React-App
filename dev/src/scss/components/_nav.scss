@@ -1,5 +1,4 @@
 .nav {
-
   &-menu {
     margin: 0;
     padding: 0;
@@ -17,6 +16,32 @@
 
       &:not(:last-child) {
         margin-right: 43px;
+      }
+    }
+  }
+}
+
+@include media('<desktop') {
+  .nav {
+    &-menu {
+      font-size: 14px;
+
+      li {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+@include media('<tablet') {
+  .nav {
+    &-menu {
+      li {
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
       }
     }
   }

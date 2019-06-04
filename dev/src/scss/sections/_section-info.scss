@@ -21,3 +21,15 @@
     z-index: -1;
   }
 }
+
+@include media('<desktop') {
+  .section-info {
+    padding: 220px 0 40px;
+  }
+}
+
+@include media('<tablet') {
+  .section-info {
+    padding: 200px 0 40px;
+  }
+}
